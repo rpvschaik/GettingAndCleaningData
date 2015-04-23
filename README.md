@@ -4,7 +4,7 @@
 The **run_analysis.R** script has been created as an assignment for the [Getting and Cleaning Data](https://class.coursera.org/getdata-013) on Coursera.
 
 The script downloads data from an expirement where persons did a number of activities while wearing a smartphone.
-The result of the script is a tidy data set with the mean of a selection of measurements per combination of person (subject) and activity,
+The result of the script is a tidy data set with the mean of a selection of measurements per combination of person (subject) and activity.
 
 Please note:
 The script will create a "data" folder in your working directory if it doesn't already exist and download the necessary data from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones . 
@@ -13,8 +13,8 @@ Also, the script needs the **dplyr** package to be installed.
 
 More background info on the data can be found in the CodeBook.md file.
 
-## Some assumption on the assignment
-The assignment states that only the measurements on the mean and standard deviation for each measurement should be extracted. However the files also inlude measurements like the "Mean Frequence" (MeanFreq). My assumption is that i should only extract the columns containing "mean()" and "std()" as mentioned in the "features_info.txt" which is included with the original data files.
+## Some assumptions on the assignment
+The assignment states that only the measurements on the mean and standard deviation for each measurement should be extracted. However the files also include measurements like the "Mean Frequence" (MeanFreq). My assumption is that i should only extract the columns containing "mean()" and "std()" as mentioned in the "features_info.txt" which is included with the original data files.
 
 ## Steps in the run_analysis.R script
 * Initialise script: Add data folder to working directory (if not already present) and load dplyr package
